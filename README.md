@@ -30,3 +30,35 @@ The king of Airland likes these fights, so the host of the battle promised the k
 Chef is the deputy of the king and you want to help him pick a soldier for the king in such a way that the king receives the best shield (with the greatest defense value). However, if Chef picks a soldier and that soldier does not survive, Chef will be thrown in a snake pit. Therefore, it should be guaranteed that the chosen soldier will survive regardless of the decisions of the other soldiers.
 
 Can you help Chef make the best choice and tell him the defense value of the shield which the king gets, or decide that he can be thrown in the snake pit no matter which soldier he picks?
+
+
+        Problem statement 4 :)
+        
+        Chef decided to teach some advanced recipes to junior chefs. On the very first day of their cooking sessions, to identify the cooking abilities of each junior chef, Chef instructed them to make their premier dishes. The junior chefs were very excited and they all went into the kitchen to cook their dishes.
+
+Chef has a limited number of jars in the kitchen. The jars are magical ― if a chef that is cooking a dish requiring x
+ingredients takes x jars, each of these jars fills itself with one of the required ingredients, and after this chef finishes cooking and returns the jars to the kitchen, they empty themselves (and are ready for other chefs to take some or all of them). Of course, this means it is impossible to cook a dish requiring x ingredients with less than x
+
+jars.
+
+Since Chef did not tell the junior chefs in which order they should prepare their dishes, they started picking up jars simultaneously and in the end, no junior chef was able to acquire enough jars to prepare their premier dish. Also, none of the junior chefs are willing to lend their jars to others. Chef was unable to handle the situation and decided to call off the cooking session for that day, so that he could get more jars and try it again later.
+
+You know that there are N
+junior chefs (numbered 1 through N) and for each valid i, the number of ingredients required for the dish of the i-th chef is Ai. If there are J
+
+jars, then formally, the following process happens:
+
+    The junior chefs take some jars; let's denote the number of jars taken by the i
+
+-th chef by ai. Any distribution of jars such that 0≤ai for each valid i and ∑Ni=1ai=J
+is possible.
+At any time, if ai<Ai
+for each chef i
+
+    that has not prepared their dish yet, the cooking session is a failure.
+    Otherwise, one of the chefs who have at least as many jars as the number of required ingredients prepares their dish and returns their jars to the kitchen.
+    Whenever some jars are returned to the kitchen, they are immediately taken by some chefs that have not prepared their dishes yet (possibly all the jars by one chef).
+    This process continues with chefs taking jars, cooking their dishes and returning jars, until no chef can cook their dish anymore or all chefs have cooked their dishes.
+    When all junior chefs have successfully cooked their dishes, the cooking session ends successfully.
+
+Chef wants to know the minimum number of magical jars that should be present in the kitchen initially so that the session would be successful regardless of how the junior chefs pick up the jars. Chef is a legendary cook, but he is not very good at mathematics, so he asks you to find that number.
